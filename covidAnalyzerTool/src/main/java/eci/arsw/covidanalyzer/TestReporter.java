@@ -18,7 +18,7 @@ public class TestReporter {
     public static final int FALSE_NEGATIVE = 3;
 
     //private static final String SERVER_URL = "http://localhost:8080/covid/result";
-    private static final String SERVER_URL = "https://peaceful-journey-71022.herokuapp.com/covid/result";
+    private static final String SERVER_URL = "https://sleepy-escarpment-26646.herokuapp.com//covid/result";
     private static ObjectMapper mapper = new ObjectMapper();
 
     public static void report(Result result, int type) {
