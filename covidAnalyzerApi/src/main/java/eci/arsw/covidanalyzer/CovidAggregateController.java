@@ -63,9 +63,6 @@ public class CovidAggregateController {
         }
     }
 
-
-    //TODO: Implemente todos los metodos GET que hacen falta.
-
     @RequestMapping(value = "/covid/result/true-positive", method = RequestMethod.GET)
     public ResponseEntity getTruePositiveResult() {
         try{
@@ -109,6 +106,12 @@ public class CovidAggregateController {
         }
 
     }
+
+    @RequestMapping(value = "/", method = RequestMethod.GET)
+    public ResponseEntity getPage() {
+            return new ResponseEntity<>("hello",HttpStatus.ACCEPTED);
+    }
+
 
     @RequestMapping(value = "/covid/result/persona/{id}", method = RequestMethod.PUT)
     public ResponseEntity savePersonaWithMultipleTests(@RequestBody ResultType type,@PathVariable UUID id) {
