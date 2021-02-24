@@ -1,0 +1,36 @@
+{
+  "name": "arsw-test-first-covid-analyzer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "semantic-release": "semantic-release"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daprieto1/ARSW-TEST-FIRST-COVID-ANALYZER.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/daprieto1/ARSW-TEST-FIRST-COVID-ANALYZER/issues"
+  },
+  "homepage": "https://github.com/daprieto1/ARSW-TEST-FIRST-COVID-ANALYZER#readme",
+  "publishConfig": {
+    "access": "restricted"
+  },
+  "devDependencies": {
+    "semantic-release": "17.3.9"
+  },
+  "release": {
+    "branches": [
+      "main"
+    ],
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/github"
+    ]
+  }
+}
